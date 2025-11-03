@@ -1,10 +1,11 @@
-Opdracht:
+## Opdracht:
 
 Maak een pagina met laravel/vue waar de gebruiker vragen kan stellen aan Novi (De Nh1816 AI Verzekeringsassistent)
 Je mag deze boilerplate gebruiken, maar je mag ook een eigen boilerplate gebruiken.
 Je mag zelf een IDE gebruiken naar keuze en "vibe" coden is ook prima.
 
 Hier zijn de api endpoints die aangeroepen moeten worden:
+
 // thread aanmaken:
 POST: https://novi-dev.portal.nh1816.nl/connect/agents/threads/assessment
 Body:
@@ -27,6 +28,24 @@ Alle endpoints hebben een header nodig: X-API-KEY. Vraag even wat deze api-key i
 
 Als je vragen hebt stel ze gerust.
 Success!
+
+##Project opzetten
+benodigdheden
+Op windows Ubuntu: https://apps.microsoft.com/detail/9PN20MSR04DW?hl=neutral&gl=NL&ocid=pdpshare
+Docker Desktop: https://www.docker.com/products/docker-desktop/
+Een IDE naar keuze: Bijvoorbeeld vscode https://code.visualstudio.com/ https://code.visualstudio.com/docs/remote/wsl
+GIT: via command line of een app zoals github desktop https://desktop.github.com/download/
+
+1. clone dit project
+2. start docker desktop (met wsl2 aan) https://docs.docker.com/desktop/features/wsl/
+3. open project in IDE met remote wsl https://code.visualstudio.com/docs/remote/wsl
+4. installeer composer in wsl: https://getcomposer.org/download/
+5. Na succesvolle installatie via terminal run: composer install
+6. Dan is sail geinstalleerd en kan je via terminal uitvoeren: ./vendor/bin/sail build
+7. Dan sail container opstarten: ./vendor/bin/sail up
+8. Dan composer install binnen sail container (nieuwe termina;): ./vendor/bin/sail composer install
+9. Dan npm packages installeren: ./vendor/bin/sail npm i
+10. Dan vite server runnen: ./vendor/bin/sail npm run dev
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

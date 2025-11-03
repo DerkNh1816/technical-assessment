@@ -28,7 +28,7 @@ class AuthController extends Controller
 
         $user = User::where('email', $credentials['email'])->first();
 
-        if ($user && $user->status === 'approved' && Auth::attempt($credentials)) {
+        if ($user && Auth::attempt($credentials)) {
             if ($user->is_admin) {
                 return redirect('/admin/users');
             } else {
