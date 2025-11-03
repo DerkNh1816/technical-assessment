@@ -1,6 +1,6 @@
 ## Opdracht:
 
-Maak een pagina met laravel/vue waar de gebruiker vragen kan stellen aan Novi (De Nh1816 AI Verzekeringsassistent)
+Maak een pagina met laravel/vue waar de gebruiker vragen kan stellen aan Novi (De Nh1816 AI Verzekeringsassistent) via de onderstaande api's.
 Je mag deze boilerplate gebruiken, maar je mag ook een eigen boilerplate gebruiken.
 Je mag zelf een IDE gebruiken naar keuze en "vibe" coden is ook prima.
 
@@ -36,7 +36,8 @@ Success!
 benodigdheden
 Op windows Ubuntu: https://apps.microsoft.com/detail/9PN20MSR04DW?hl=neutral&gl=NL&ocid=pdpshare
 Docker Desktop: https://www.docker.com/products/docker-desktop/
-Een IDE naar keuze: Bijvoorbeeld vscode https://code.visualstudio.com/ https://code.visualstudio.com/docs/remote/wsl
+Een IDE naar keuze: Bijvoorbeeld vscode https://code.visualstudio.com/
+Remote WSL extensie: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 GIT: via command line of een app zoals github desktop https://desktop.github.com/download/
 
 1. clone dit project
@@ -46,7 +47,7 @@ GIT: via command line of een app zoals github desktop https://desktop.github.com
 5. Na succesvolle installatie via terminal run: composer install
 6. Dan is sail geinstalleerd en kan je via terminal uitvoeren: ./vendor/bin/sail build
 7. Dan sail container opstarten: ./vendor/bin/sail up
-8. Dan composer install binnen sail container (nieuwe termina;): ./vendor/bin/sail composer install
+8. Dan composer install binnen sail container (nieuwe terminal): ./vendor/bin/sail composer install
 9. Dan npm packages installeren: ./vendor/bin/sail npm i
 10. Dan vite server runnen: ./vendor/bin/sail npm run dev
 
