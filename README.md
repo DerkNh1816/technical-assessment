@@ -8,6 +8,7 @@ Hier zijn de api endpoints die aangeroepen moeten worden:
 
 // thread aanmaken:
 POST: https://novi-dev.portal.nh1816.nl/connect/agents/threads/assessment
+
 Body:
 {
 "message": "test"
@@ -18,6 +19,7 @@ GET: https://novi-dev.portal.nh1816.nl/connect/agents/threads/assessment/poll
 
 // message maken
 POST: https://novi-dev.portal.nh1816.nl/connect/agents/threads/assessment/messages
+
 Body:
 {
 "threadId": 131,
@@ -29,7 +31,8 @@ Alle endpoints hebben een header nodig: X-API-KEY. Vraag even wat deze api-key i
 Als je vragen hebt stel ze gerust.
 Success!
 
-##Project opzetten
+## Project opzetten
+
 benodigdheden
 Op windows Ubuntu: https://apps.microsoft.com/detail/9PN20MSR04DW?hl=neutral&gl=NL&ocid=pdpshare
 Docker Desktop: https://www.docker.com/products/docker-desktop/
